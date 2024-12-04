@@ -169,7 +169,6 @@ By combining both global and geographical regression methods, the analysis offer
 
 Table 1: Nearest Neighbour Results for Study Area
 
-
 | Variable                     | Random Mean NND  | Dispersed Mean NND  | Observed Mean NND  | Z-score | Ratio | p-value |
 |:-----------------------------:|:--------------:|:-----------------:|:----------------:|:-------:|:-----:|:-------:|
 | Precipitation in 2017         | 25132.25       | 54010.71          | 24681.50         | -0.66   | 0.98  | p = 0.50 |
@@ -178,6 +177,10 @@ Table 1: Nearest Neighbour Results for Study Area
 | Temperature in 2018           | 39951.79       | 85858.80          | 28459.32         | -6.69   | 0.76  | p < 0.001|
 | Precipitation in 2019         | 40644.25       | 87346.93          | 28984.09         | -6.56   | 0.71  | p < 0.001|
 | Temperature in 2019           | 40644.25       | 87346.93          | 29305.54         | -6.38   | 0.72  | p < 0.001|
+
+<b>Quadrat Analysis</b>
+
+Table 2: Quadrat Analysis Results for the Study Area
 
 | Variable           | **Number of Quadrats** | **Variance** | **Mean** | **VMR** | **Chi-square** | **p-value** |
 |---------------------------|------------------------|--------------|----------|---------|----------------|------------|
@@ -188,8 +191,9 @@ Table 1: Nearest Neighbour Results for Study Area
 | Precipitation in 2019      | 225                    | 2.46         | 0.66     | 3.88    | 868.71         | p < 0.001  |
 | Temperature in 2019        | 225                    | 1.94         | 0.64     | 3.05    | 683.05         | p < 0.001  |
 
+<b>K-Function Analysis<b>
 
-
+The graphs below show the results of the K-function analysis on weather stations measuring total precipitation and average temperature across the study area. These graphs display the relationship between the distance of points from one another and the expected number of points within a certain distance of a given point. The black curved line represents the observed spatial distribution, while the red dashed line shows the expected relationship under a random distribution. If the observed distribution falls within the gray boundary around the random distribution, it indicates that the observed distribution is not significantly different from a random distribution for the study area. 
 
 
 
