@@ -274,7 +274,7 @@ Inverse Distance Weighting (IDW)</b>
 
 <div style="display: flex; justify-content: space-around;">
   <img src="images/Kriging_interpolation_2018rn.jpeg" alt="kriging graph of precipitation in BC in 2018" style="width: 45%;"/>
-  <img src="images/Kriging_interploation_2018temp.jpeg" alt="IWD graph of temp in BC in 2018" style="width: 45%;"/>
+  <img src="images/Kriging_interpolation_2018temp.jpeg" alt="IWD graph of temp in BC in 2018" style="width: 45%;"/>
 </div>
 
 <i> Figure 8. the above maps show a kriging interpolation surface of average temperature (bottom) and total precipitation (top) in BC in 2018. </i>
