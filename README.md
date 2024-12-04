@@ -4,7 +4,8 @@
 ### size 3
 #### size 4
 ##### size 5
-<b>1.0 Introduction</b>
+
+### 1.0 Introduction
 
 Over the past few decades, wildfires have burned millions of hectares of forest across British Columbia (BC), devastating the landscape. Notably, the four most severe wildfire seasons occurred in 2017, 2018, 2021, and 2023 (Parisien et al., 2023). Wildfires significantly impact ecosystems, including biodiversity, habitats, water systems, and human settlements (Haider et al., 2019). Additionally, the smoke from these fires severely affects air quality over vast distances (Douglas-Vail et al., 2023).
 BC's complex topography encompasses diverse ecosystems and climates, characterized by variations in elevation, temperature, and vegetation. These environmental differences lead to significant spatial variations in wildfire intensity and extent (Meyn et al., 2013). Examining environmental factors at a spatial resolution that reflects this diversity is crucial to avoid obscuring these variations (Meyn et al., 2013). However, wildfire prediction and management remain challenging due to limited understanding of wildfires' roles in the Earth's system (Liu et al., 2024).
@@ -14,7 +15,7 @@ In BC, the area burned by wildfires appears to depend more strongly on precipita
 The wildfire seasons of 2017 and 2018 were among the worst in recent decades, with 1,216,053 hectares and 1,354,284 hectares burned, respectively. In stark contrast, 2019 saw a 98% decrease in burned area, with only 21,138 hectares affected. This raises the question: what made 2019 so different from the preceding two years?
 This study seeks to deepen the understanding of the relationship between wildfires and climate by examining differences in climate conditions during 2017, 2018, and 2019. The goal is to determine whether temperature or precipitation played a greater role in the significant reduction of wildfire activity in 2019.
 
-<b>2.0 Study Area and Data</b>
+### 2.0 Study Area and Data
 
 The study area for this research is British Columbia (BC), Canada, located between 48° and 60°N latitude and spanning 944,735 km² (Figure 4). BC is renowned for its diverse ecosystems, which range from coastal rainforests and alpine tundra to boreal forests and temperate grasslands. This ecological diversity is driven by significant variations in elevation, temperature, precipitation, soil type, and geographic location.
 
@@ -26,7 +27,7 @@ One significant limitation of the climate data is the sparse distribution of wea
 
 The fire and climate datasets are essential to understanding the relationship between wildfires and climatic conditions. The fire data allows for spatial and temporal analysis of wildfire occurrences and their impact, while the climate data provides critical variables, such as precipitation and temperature, which influence wildfire behavior and intensity.
 
-<b>3.0 Methods</b>
+### 3.0 Methods
 
 This study employs a range of spatial analysis methods to investigate the relationship between climate and wildfire activity in British Columbia (BC). The analysis includes examining the spatial distribution of weather stations and wildfires, as well as assessing spatial autocorrelation within each dataset. These methods are crucial for identifying patterns and dependencies in the spatial arrangement of data points.
 
@@ -166,7 +167,7 @@ In GWR, a spatial kernel function assigns weights to observations based on their
 The output of GWR includes maps of regression coefficients and $$R^2$$ values, illustrating how the strength and nature of these relationships change across the study area. By comparing the results of global regression and GWR, this study assesses not only the overall influence of climate variables on wildfire disturbances but also identifies areas where these relationships are particularly strong or weak.
 By combining both global and geographical regression methods, the analysis offers comprehensive insights into the climate-wildfire relationship in British Columbia, highlighting both overarching trends and localized patterns.
 
-<b>4.0 Results</b>
+### 4.0 Results
 
 <b>4.1 Evaluating the Spatial Distribution of Weather Stations 
 
@@ -265,14 +266,14 @@ Inverse Distance Weighting (IDW)</b>
 <b>Kriging</b>
 
 <div style="display: flex; justify-content: space-around;">
-  <img src="images/Kriging_interploation_2017rn.jpeg" alt="kriging graph of precipitation in BC in 2017" style="width: 45%;"/>
+  <img src="images/Kriging_interpolation_2017rn.jpeg" alt="kriging graph of precipitation in BC in 2017" style="width: 45%;"/>
   <img src="images/Kriging_interploation_2017temp.jpeg" alt="IWD graph of temp in BC in 2017" style="width: 45%;"/>
 </div>
 
 <i>Figure 7. the above maps show a kriging interpolation surface of average temperature (bottom) and total precipitation (top) in BC in 2017.</i>
 
 <div style="display: flex; justify-content: space-around;">
-  <img src="images/Kriging_interploation_2018rn.jpeg" alt="kriging graph of precipitation in BC in 2018" style="width: 45%;"/>
+  <img src="images/Kriging_interpolation_2018rn.jpeg" alt="kriging graph of precipitation in BC in 2018" style="width: 45%;"/>
   <img src="images/Kriging_interploation_2018temp.jpeg" alt="IWD graph of temp in BC in 2018" style="width: 45%;"/>
 </div>
 
