@@ -40,7 +40,6 @@ The Nearest Neighbor Distance (NND) analysis is a widely used method to assess t
 
 In contrast, a dispersed distribution occurs when points are spread out across the area. The mean Nearest Neighbor Distance dispersion varies for each study area and must be calculated to determine what the dispersion would look like if the points were perfectly distributed. To calculate the expected dispersion for a study area, the density of points must first be computed by dividing the total number of points by the area of study. This density is then used to calculate a theoretical perfectly dispersed distribution across the study area (1).
 
-Equation 1: 
 $$
 \bar{NND_d} = \frac{1.07453}{\sqrt{\text{Density}}}
 $$
