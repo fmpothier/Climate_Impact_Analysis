@@ -183,7 +183,7 @@ Table 1:</b> Nearest Neighbour Results for Study Area
 Table 2:</b> Quadrat Analysis Results for the Study Area
 
 | Variable           | **Number of Quadrats** | **Variance** | **Mean** | **VMR** | **Chi-square** | **p-value** |
-|---------------------------|------------------------|--------------|----------|---------|----------------|------------|
+|:-------------------------:|:----------------------:|:-------------:|:--------:|:-------:|:--------------:|:-----------:|
 | Precipitation in 2017      | 225                    | 6.39         | 1.66     | 3.84    | 860.49         | p < 0.001  |
 | Temperature in 2017        | 225                    | 2.64         | 0.69     | 3.84    | 859.68         | p < 0.001  |
 | Precipitation in 2018      | 225                    | 6.21         | 1.64     | 3.78    | 846.26         | p < 0.001  |
