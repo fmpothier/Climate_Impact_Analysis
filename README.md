@@ -43,3 +43,7 @@ In contrast, a dispersed distribution occurs when points are spread out across t
 $$
 \bar{NND_d} = \frac{1.07453}{\sqrt{\text{Density}}}
 $$
+
+$$
+I = \frac{\sum_{i=1}^n\sum_{j=1}^nW_{i,j}(x_i - \bar{x})(x_j - \bar{x})}{(\sum_{i=1}^n\sum_{j=1}^nW_{i,j})\sum_{i=1}^n(x_i - \bar{x})^2}
+$$
