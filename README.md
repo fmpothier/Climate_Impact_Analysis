@@ -201,13 +201,19 @@ The graphs below show the results of the K-function analysis on weather stations
   <img src="images/K_function_temp_2017.jpeg" alt="K-function graph of weather stations measuring temp in BC in 2017" style="width: 45%;"/>
 </div>
 
-<i>Figure 1. The graph above illustrates the K-function analysis of the distribution of weather stations measuring total precipitation (top) and average temperature (bottom) in British Columbia (BC) in 2017. </i>
+<i>Figure 1. The graph above illustrates the K-function analysis of the distribution of weather stations measuring total precipitation (left) and average temperature (right) in British Columbia (BC) in 2017. </i>
 
 <div style="display: flex; justify-content: space-around;">
   <img src="images/K_function_precip_2018.jpeg" alt="K-function graph of weather stations measuring precipitation in BC in 2018" style="width: 45%;"/>
   <img src="images/K_function_temp_2018.jpeg" alt="K-function graph of weather stations measuring temp in BC in 2018" style="width: 45%;"/>
 </div>
 
-<i>Figure 2.  The graphs show the K-function analysis of the distribution of weather stations in British Columbia (BC) in 2018. The top graph represents stations measuring total precipitation, while the bottom graph represents stations measuring average temperature.</i>
+<i>Figure 2.  The graphs show the K-function analysis of the distribution of weather stations in British Columbia (BC) in 2018. The left graph represents stations measuring total precipitation, while the right graph represents stations measuring average temperature.</i>
 
+<div style="display: flex; justify-content: space-around;">
+  <img src="images/K-functon_2019_temp_graph.jpeg" alt="K-function graph of weather stations measuring precipitation in BC in 2019" style="width: 45%;"/>
+  <img src="images/k-function_2019_Actual_temp.jpg" alt="K-function graph of weather stations measuring temp in BC in 2019" style="width: 45%;"/>
+</div>
+
+Figure 3.  The graphs show the K-function analysis of the distribution of weather stations in British Columbia (BC) in 2019. The left graph illustrates the distribution of stations measuring total precipitation, while the right graph illustrates the distribution of stations measuring average temperature.
 
