@@ -148,7 +148,7 @@ $$
 Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \epsilon
 $$
 
-This method assumes that the relationships between variables are consistent across the study area. The statistical significance of the regression coefficients is assessed using hypothesis tests, and the model’s overall fit is evaluated using metrics such as the R^2   value, which indicates the proportion of variance in the dependent variable explained by the independent variables.
+This method assumes that the relationships between variables are consistent across the study area. The statistical significance of the regression coefficients is assessed using hypothesis tests, and the model’s overall fit is evaluated using metrics such as the $$R^2$$ value, which indicates the proportion of variance in the dependent variable explained by the independent variables.
 
 When performing a linear regression analysis, it is essential to ensure that four key assumptions are met to validate the model and ensure it provides accurate predictions and inferences. Violations of these assumptions can compromise the reliability of the model's results (Poole & O’Farrell, 1971). These assumptions include linearity, which means that the relationship between the independent variables and the dependent variable should be linear (Poole & O’Farrell, 1971). Another critical assumption is constant variance, which requires that the errors, or residuals, have a consistent spread across all levels of the independent variables, a property known as homoscedasticity (Poole & O’Farrell, 1971). Additionally, the errors are expected to follow a normal distribution, where most errors are small and extreme values are rare (Poole & O’Farrell, 1971). Finally, the independence assumption states that the errors for one observation should not be influenced by the errors of another, ensuring no autocorrelation exists (Poole & O’Farrell, 1971).
 
@@ -211,8 +211,8 @@ The graphs below show the results of the K-function analysis on weather stations
 <i>Figure 2.  The graphs show the K-function analysis of the distribution of weather stations in British Columbia (BC) in 2018. The left graph represents stations measuring total precipitation, while the right graph represents stations measuring average temperature.</i>
 
 <div style="display: flex; justify-content: space-around;">
-  <img src="images/K-functon_2019_temp_graph.jpeg" alt="K-function graph of weather stations measuring precipitation in BC in 2019" style="width: 45%;"/>
-  <img src="images/k-function_2019_Actual_temp.jpg" alt="K-function graph of weather stations measuring temp in BC in 2019" style="width: 45%;"/>
+  <img src="images/K-functon_2019_temp_graph.jpeg" alt="K-function graph of weather stations measuring precipitation in BC in 2019" style="width: 50%;"/>
+  <img src="images/k-function_2019_Actual_temp.jpg" alt="K-function graph of weather stations measuring temp in BC in 2019" style="width: 40%;"/>
 </div>
 
 Figure 3.  The graphs show the K-function analysis of the distribution of weather stations in British Columbia (BC) in 2019. The left graph illustrates the distribution of stations measuring total precipitation, while the right graph illustrates the distribution of stations measuring average temperature.
