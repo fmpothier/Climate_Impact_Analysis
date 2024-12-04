@@ -195,5 +195,8 @@ Table 2: Quadrat Analysis Results for the Study Area
 
 The graphs below show the results of the K-function analysis on weather stations measuring total precipitation and average temperature across the study area. These graphs display the relationship between the distance of points from one another and the expected number of points within a certain distance of a given point. The black curved line represents the observed spatial distribution, while the red dashed line shows the expected relationship under a random distribution. If the observed distribution falls within the gray boundary around the random distribution, it indicates that the observed distribution is not significantly different from a random distribution for the study area. 
 
+<img src="images/K_function_precip_2017.jpeg" alt="K-function graph of weather stations measuring precipitation in BC in 2017" width="600" height="400">
+
+
 
 
