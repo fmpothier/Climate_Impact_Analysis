@@ -306,22 +306,22 @@ Regression Analysis</b>
 <b>Geographical Regression Analysis</b>
 
 <div style="display: flex; justify-content: space-around;">
-  <img src="gwr_coefficients_optimal_bandwidth_rn_17_map.png" alt="GWR of precipitation and fires in BC in 2017" style="width: 45%;"/>
-  <img src="gwr_coefficients_optimal_bandwidth_t_17_map.png" alt="GWR of temp and fires BC in 2017" style="width: 45%;"/>
+  <img src="images/gwr_coefficients_optimal_bandwidth_rn_17_map.png" alt="GWR of precipitation and fires in BC in 2017" style="width: 45%;"/>
+  <img src="images/gwr_coefficients_optimal_bandwidth_t_17_map.png" alt="GWR of temp and fires BC in 2017" style="width: 45%;"/>
 </div>
 
 <i>Figure 10.  The figure above displays the local $$R^2$$ values from the GWR analysis for each dependent variable related to precipitation in BC in 2017. Most of the $$R^2$$ values fall between 0.2 and 0.5, with some areas in northern BC showing values closer to 0.75–0.8. A square root transformation was applied to the dependent variables to correct for heteroscedasticity and enhance the normality of the data.</i>
 
 <div style="display: flex; justify-content: space-around;">
-  <img src="gwr_coefficients_optimal_bandwidth_rn_18_map.png" alt="GWR of precipitation and fires in BC in 2018" style="width: 45%;"/>
-  <img src="gwr_coefficients_optimal_bandwidth_t_18_map.png" alt="GWR of temp and fires BC in 2018" style="width: 45%;"/>
+  <img src="images/gwr_coefficients_optimal_bandwidth_rn_18_map.png" alt="GWR of precipitation and fires in BC in 2018" style="width: 45%;"/>
+  <img src="images/gwr_coefficients_optimal_bandwidth_t_18_map.png" alt="GWR of temp and fires BC in 2018" style="width: 45%;"/>
 </div>
 
 <i>Figure 11.  The figure above illustrates the local $$R^2$$ values derived from the GWR analysis for each dependent variable associated with precipitation in BC during 2017. The majority of the $$R^2$$ values are below 0.25, with some regions in northern BC exhibiting values as high as 0.75, and areas on southern Vancouver Island approaching 0.5. To address heteroscedasticity and enhance the normality of the data, a square root transformation was applied to the dependent variables.</i>
 
 <div style="display: flex; justify-content: space-around;">
-  <img src="gwr_coefficients_optimal_bandwidth_rn_19_map.png" alt="GWR of precipitation and fires in BC in 2019" style="width: 45%;"/>
-  <img src="gwr_coefficients_optimal_bandwidth_t_19_map.png" alt="GWR of temp and fires BC in 2019" style="width: 45%;"/>
+  <img src="images/gwr_coefficients_optimal_bandwidth_rn_19_map.png" alt="GWR of precipitation and fires in BC in 2019" style="width: 45%;"/>
+  <img src="images/gwr_coefficients_optimal_bandwidth_t_19_map.png" alt="GWR of temp and fires BC in 2019" style="width: 45%;"/>
 </div>
 
 <i>Figure 12. The figure above presents the local $$R^2$$ values obtained from the GWR analysis for each dependent variable related to precipitation in BC during 2018. Most of the local $$R^2$$ values fall below 0.3, with a few regions in northern BC reaching up to 0.7. To correct for heteroscedasticity and improve the normality of the data, a square root transformation was applied to the dependent variables.</i>
