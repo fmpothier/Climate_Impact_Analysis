@@ -78,10 +78,108 @@ To test if the findings are significantly different from a random distribution, 
 
 $$
 \text{MEAN} = \frac{n}{m}
+$$
+
+$$
 \text{VMR} = \frac{VAR}{MEAN}
 $$
 
+<b>K-Function Analysis</b>
+
+The K-Function Analysis is used to evaluate the spatial distribution of points across a study area, determining whether the pattern is clustered, dispersed, or random. Unlike the Nearest Neighbor method, which examines the distribution of points only at the nearest level, the K-function provides a more detailed analysis by assessing the spatial arrangement at multiple distances. This capability allows the K-function to address the challenge of scale in spatial analysis, as it reveals how point patterns change at different distances from a given point, providing a more comprehensive view of spatial structure.
+
+The K-function works by calculating a ratio, denoted as K(d), which represents the number of points within a specified distance (d) from a randomly selected point. This ratio is then compared to the expected density of points for a random distribution, referred to as Kcsr(d). The Kcsr(d) represents the theoretical number of points that would be expected to fall within the same distance in a randomly distributed pattern, and it serves as a baseline for comparison. The K-function is calculated using the formula shown in Equation (8), where K(d) is derived from the observed number of points within distance d and compared to the expected number of points (Kcsr(d)) from a random distribution, as defined in Equation (9).
+
+$$
+K(d) = \lambda^{-1} E(N_d)
+$$
+
+$$
+K_{\text{CSR}}(d) = \pi d^2
+$$
+
+By comparing K(d) to Kcsr(d), the K-function provides insight into the spatial structure of the point pattern. If the observed K(d) is significantly greater than the expected Kcsr(d), it suggests a clustered pattern, where points are more concentrated around each other than would be expected by chance. Conversely, if K(d) is smaller than Kcsr(d), it suggests a dispersed pattern, where points are spread out more evenly than a random distribution would predict. When K(d) is close to Kcsr(d), it indicates a random distribution, where points are spatially independent and show no evident clustering or dispersion. The K-function, therefore, provides a robust statistical method for understanding the spatial arrangement of points at varying distances and offers critical insights into spatial relationships within the study area.
+
+<b>3.2 Analyzing the Spatial Autocorrelation of Weather Stations</b>
+
+<b>Global Moran’s I</b>
+
+Global Moran’s I is a widely used spatial statistical method designed to assess spatial autocorrelation within a given study area. Spatial autocorrelation refers to the degree to which a value at one location is related to values at neighboring locations. In other words, it evaluates whether similar values tend to cluster in space or if dissimilar values are spatially grouped together. Global Moran’s I quantifies this spatial relationship by measuring the extent to which each location’s value deviates from the overall mean of the dataset and comparing these deviations to the deviations observed in its neighboring locations. This method extends the concept of the Pearson correlation coefficient, which measures the linear relationship between two variables, by adapting it to the spatial context (Westerholt, 2023).
+
+The calculation of Global Moran’s I incorporates spatial weights, which are used to define the relationships between locations in the study area. These weights, represented as Wi,j in the formula (10), reflect the proximity or connectivity between locations i and j, influencing how much the value at one location is affected by the value at its neighbor. By multiplying the deviations from the mean at location i (xi) and its neighbor j (xj) by the corresponding spatial weight Wi,j, Moran’s I accounts for the varying strengths of these spatial relationships. The denominator of the formula standardizes the result, ensuring the output is comparable across different study areas.
 
 $$
 I = \frac{\sum_{i=1}^n\sum_{j=1}^nW_{i,j}(x_i - \bar{x})(x_j - \bar{x})}{(\sum_{i=1}^n\sum_{j=1}^nW_{i,j})\sum_{i=1}^n(x_i - \bar{x})^2}
 $$
+
+The resulting value of Moran’s I provides insights into the nature of spatial autocorrelation in the dataset. Higher values of Moran’s I indicate strong positive spatial autocorrelation, meaning that similar values tend to cluster together in space. Conversely, lower values of Moran’s I suggest strong negative spatial autocorrelation, where dissimilar values are more likely to be found near each other. The method is particularly useful for identifying spatial patterns and determining the degree to which the arrangement of values is influenced by spatial proximity.
+
+<b>3.3 Interpolating Temperature and Precipitation</b>
+
+Interpolation methods estimate values at unsampled locations using observed data points, creating continuous surfaces that represent spatial patterns. In this study, Inverse Distance Weighting (IDW) and Kriging were employed to create interpolated surfaces of total precipitation and average temperature in British Columbia.
+
+<b>Inverse Distance Weighting (IDW)</b>
+
+IDW is a deterministic spatial interpolation method that assumes points closer to the location being estimated have more influence on the interpolated value than points farther away (Ibrahim & Nasser, 2017). It uses the exact observed values to generate a smooth surface, where gradual changes occur based on the spatial distribution of the data. The formula for IDW, shown in the equation below, calculates the interpolated value Z(x) as a weighted average of known values. Each observed value Z_i   is assigned a weight based on its distance from the estimation point, with closer points receiving higher weights. The weights decrease with increasing distance, and the result is normalized by dividing by the sum of all weights. Additionally, the power parameter in the IDW formula plays a critical role in controlling the surface smoothness, with higher power values emphasizing the influence of closer points more strongly (Ibrahim & Nasser, 2017). Importantly, IDW does not alter the observed data values used in the interpolation.
+
+$$
+Z_j = k_j \sum_{i=1}^n \left( \frac{1}{d_{ij}^a} \right) z_i
+$$
+
+<b>Kriging</b>
+
+Kriging, on the other hand, is a geostatistical interpolation method that accounts for both the spatial autocorrelation and the distances between sampled points (Ibrahim & Nasser, 2017). Unlike IDW, Kriging not only provides interpolated values but also offers an estimate of prediction uncertainty. It uses a variogram to model spatial autocorrelation, which describes how the similarity between data points changes with distance (Ibrahim & Nasser, 2017). Based on this, weights are assigned to known points, optimized to minimize prediction error. The formula for Kriging, shown in Equation (12), estimates the value at an unknown location as a weighted sum of known values. The weights are determined by solving a system of linear equations derived from the variogram model.
+
+$$
+Z(x) = \sum_{i=1}^{N} \lambda_i Z(x_i)
+$$
+
+In this study, Ordinary Kriging was applied, which assumes the mean of the data is unknown but constant across the study area. This method is particularly advantageous for accounting for spatial variability and providing robust estimates, especially in heterogeneous datasets. By combining deterministic and geostatistical methods, the interpolation surfaces generated in this study offer complementary insights into spatial patterns of precipitation and temperature.
+
+<b>3.4	Determining the Influence of Temperature and Precipitation on Wildfire Disturbance</b>
+
+To examine the relationship between temperature, precipitation, and wildfire disturbances in British Columbia, both regression analysis and geographical regression analysis were employed. These statistical methods allow for a detailed exploration of the extent to which climate variables influence the occurrence, intensity, and distribution of wildfires.
+
+<b>Regression Analysis<b>
+
+Regression analysis is a statistical method used to model and quantify the relationship between dependent and independent variables. In this study, the dependent variable represents wildfire disturbance metrics (e.g., area burned, fire severity, or frequency), while the independent variables are climate-related factors, including average temperature and total precipitation. The relationship between these variables can be expressed by a linear regression model show below.
+
+$$
+Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \epsilon
+$$
+
+This method assumes that the relationships between variables are consistent across the study area. The statistical significance of the regression coefficients is assessed using hypothesis tests, and the model’s overall fit is evaluated using metrics such as the R^2   value, which indicates the proportion of variance in the dependent variable explained by the independent variables.
+
+When performing a linear regression analysis, it is essential to ensure that four key assumptions are met to validate the model and ensure it provides accurate predictions and inferences. Violations of these assumptions can compromise the reliability of the model's results (Poole & O’Farrell, 1971). These assumptions include linearity, which means that the relationship between the independent variables and the dependent variable should be linear (Poole & O’Farrell, 1971). Another critical assumption is constant variance, which requires that the errors, or residuals, have a consistent spread across all levels of the independent variables, a property known as homoscedasticity (Poole & O’Farrell, 1971). Additionally, the errors are expected to follow a normal distribution, where most errors are small and extreme values are rare (Poole & O’Farrell, 1971). Finally, the independence assumption states that the errors for one observation should not be influenced by the errors of another, ensuring no autocorrelation exists (Poole & O’Farrell, 1971).
+
+<b>Geographical Regression Analysis</b>
+
+While traditional regression assumes a global relationship across the entire study area, geographical regression analysis accounts for spatial heterogeneity, where relationships between variables may vary across different locations. One such method is Geographically Weighted Regression (GWR), which adapts the regression model for local contexts by calibrating it separately for each point or region in the study area.
+
+In GWR, a spatial kernel function assigns weights to observations based on their distance from the location being analyzed, with closer points receiving higher weights. This allows for the detection of local variations in the relationship between climate variables and wildfire disturbances, providing a nuanced understanding of how these factors interact spatially.
+
+The output of GWR includes maps of regression coefficients and R^2   values, illustrating how the strength and nature of these relationships change across the study area. By comparing the results of global regression and GWR, this study assesses not only the overall influence of climate variables on wildfire disturbances but also identifies areas where these relationships are particularly strong or weak.
+By combining both global and geographical regression methods, the analysis offers comprehensive insights into the climate-wildfire relationship in British Columbia, highlighting both overarching trends and localized patterns.
+
+<b>4.0 Results</b>
+
+<b>4.1 Evaluating the Spatial Distribution of Weather Stations </b>
+
+<b> Nearest Neighbour Distance</b>
+
+Table 1: Nearest Neighbour Results for Study Area
+
+
+| Variable                     | Random (NND) ̅ | Dispersed (NND) ̅ | Observed (NND) ̅ | Z-score | Ratio | p-value |
+|:-----------------------------:|:--------------:|:-----------------:|:----------------:|:-------:|:-----:|:-------:|
+| Precipitation in 2017         | 25132.25       | 54010.71          | 24681.50         | -0.66   | 0.98  | p = 0.50 |
+| Temperature in 2017           | 39039.23       | 83897.65          | 30165.74         | -5.4136 | 0.7727| p < 0.001|
+| Precipitation in 2018         | 25267.73       | 54301.87          | 25061.73         | -0.30   | 0.99  | p = 0.76 |
+| Temperature in 2018           | 39951.79       | 85858.80          | 28459.32         | -6.69   | 0.76  | p < 0.001|
+| Precipitation in 2019         | 40644.25       | 87346.93          | 28984.09         | -6.56   | 0.71  | p < 0.001|
+| Temperature in 2019           | 40644.25       | 87346.93          | 29305.54         | -6.38   | 0.72  | p < 0.001|
+
+
+
+
+
