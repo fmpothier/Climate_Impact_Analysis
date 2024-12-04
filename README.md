@@ -245,6 +245,7 @@ Inverse Distance Weighting (IDW)</b>
   <img src="images/Clipped_IDW_Interpolation_2017_rain_Map.png" alt="IDW graph of weather stations measuring precipitation in BC in 2017" style="width: 45%;"/>
   <img src="images/Clipped_IDW_Interpolation_2017_temp_Map.png" alt="IWD graph of weather stations measuring temp in BC in 2017" style="width: 45%;"/>
 </div>
+
 <i>Figure 4. The above graphs show the IDW interpolation surface for average temperature (right) and total precipitation (left) in BC in 2017.</i>
 
 <div style="display: flex; justify-content: space-around;">
@@ -253,4 +254,65 @@ Inverse Distance Weighting (IDW)</b>
 </div>
 
 <i>Figure 5. The graphs above depict the IDW interpolation surfaces for average temperature (right) and total precipitation (left) across British Columbia in 2018. </i>
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="images/Clipped_IDW_Interpolation_2019_rain_Map.png" alt="IDW graph of precipitation in BC in 2019" style="width: 45%;"/>
+  <img src="images/Clipped_IDW_Interpolation_2019_temp_Map.png" alt="IWD graph of temp in BC in 2019" style="width: 45%;"/>
+</div>
+
+<i>Figure 6. The above graphs show the IDW interpolation surface for average temperature (bottom) and total precipitation (top) in BC in 2019. </i>
+
+<b>Kriging</b>
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="images/Kriging_interploation_2017rn.jpeg" alt="kriging graph of precipitation in BC in 2017" style="width: 45%;"/>
+  <img src="images/Kriging_interploation_2017temp.jpeg" alt="IWD graph of temp in BC in 2017" style="width: 45%;"/>
+</div>
+
+<i>Figure 7. the above maps show a kriging interpolation surface of average temperature (bottom) and total precipitation (top) in BC in 2017.</i>
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="images/Kriging_interploation_2018rn.jpeg" alt="kriging graph of precipitation in BC in 2018" style="width: 45%;"/>
+  <img src="images/Kriging_interploation_2018temp.jpeg" alt="IWD graph of temp in BC in 2018" style="width: 45%;"/>
+</div>
+
+<i> Figure 8. the above maps show a kriging interpolation surface of average temperature (bottom) and total precipitation (top) in BC in 2018. </i>
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="images/Kriging_inter_precip_2019_2.jpeg" alt="kriging graph of precipitation in BC in 2019" style="width: 45%;"/>
+  <img src="images/Kriging_interpolation_2019temp.jpeg" alt="IWD graph of temp in BC in 2019" style="width: 45%;"/>
+</div>
+
+<i>Figure 9. The above maps show a kriging interpolation surface of average temperature (bottom) and total precipitation (top) in BC in 2019.</i>
+
+<b>Table 4:</b> The table below shows the RMSE and R^2 for each kriging interpolation surfaces in figures 7, 8, and 9.
+
+|                      **Year and Variable**        | **RMSE** | **R²** |
+|:-------------------------------------------------:|:--------:|:------:|
+| Precipitation in 2017                             |  147.84  |  0.63  |
+| Temperature in 2017                               |   2.45   |  0.42  |
+| Precipitation in 2018                             |  129.68  |  0.53  |
+| Temperature in 2018                               |   2.8    |  0.37  |
+| Precipitation in 2019                             |  164.14  |  0.50  |
+| Temperature in 2019                               |   3.65   |  0.29  |
+
+The RMSE (Root Mean Square Error) provides a measure of the accuracy of the kriging analysis by quantifying the average difference between the observed values and the predicted values. The R^2 (coefficient of determination) indicates how well the kriging model explains the variability in the observed data. Together, these values are used to assess the precision and accuracy of the kriging interpolation in predicting unknown values.
+
+<b>4.4 Determining the Influence of Temperature and Precipitation on Wildfire Disturbance
+
+Regression Analysis</b>
+
+<b>Geographical Regression Analysis</b>
+
+
+
+
+
+
+
+
+
+
+
+
 
