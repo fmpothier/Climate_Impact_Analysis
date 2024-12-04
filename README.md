@@ -163,11 +163,11 @@ By combining both global and geographical regression methods, the analysis offer
 
 <b>4.0 Results</b>
 
-<b>4.1 Evaluating the Spatial Distribution of Weather Stations </b>
+<b>4.1 Evaluating the Spatial Distribution of Weather Stations 
 
-<b> Nearest Neighbour Distance</b>
+Nearest Neighbour Distance
 
-Table 1: Nearest Neighbour Results for Study Area
+Table 1:</b> Nearest Neighbour Results for Study Area
 
 | Variable                     | Random Mean NND  | Dispersed Mean NND  | Observed Mean NND  | Z-score | Ratio | p-value |
 |:-----------------------------:|:--------------:|:-----------------:|:----------------:|:-------:|:-----:|:-------:|
@@ -178,9 +178,9 @@ Table 1: Nearest Neighbour Results for Study Area
 | Precipitation in 2019         | 40644.25       | 87346.93          | 28984.09         | -6.56   | 0.71  | p < 0.001|
 | Temperature in 2019           | 40644.25       | 87346.93          | 29305.54         | -6.38   | 0.72  | p < 0.001|
 
-<b>Quadrat Analysis</b>
+<b>Quadrat Analysis
 
-Table 2: Quadrat Analysis Results for the Study Area
+Table 2:</b> Quadrat Analysis Results for the Study Area
 
 | Variable           | **Number of Quadrats** | **Variance** | **Mean** | **VMR** | **Chi-square** | **p-value** |
 |---------------------------|------------------------|--------------|----------|---------|----------------|------------|
@@ -222,5 +222,14 @@ The graphs below show the results of the K-function analysis on weather stations
 Global Moran’s I
 
 Table 3:</b> Global Moran's I Results for Total Precipitation and Average Temperature in BC over the years 2017, 2018 and 2019. 
+
+| Year/Variable          | Global Moran’s I | Expected Moran’s I | Variance | Range         | z-score | p-value   |
+|:----------------------:|:---------------:|:-------------------:|:---------:|:-------------:|--------:|:---------:|
+| Precipitation in 2017  | 0.3362           | -0.0023             | 1e-04    | -0.68 to 1.02 | 32.55   | p < 0.001 |
+| Temperature in 2017    | 0.2963           | -0.0057             | 6e-04    | -1 to 1.02    | 12.35   | p < 0.001 |
+| Precipitation in 2018  | 0.2054           | -0.0025             | 1e-04    | -0.5 to 1.01  | 18.17   | p < 0.001 |
+| Temperature in 2018    | 0.2179           | -0.0059             | 6e-04    | -1 to 1.01    | 9.27    | p < 0.001 |
+| Precipitation in 2019  | 0.1033           | -0.0060             | 6e-04    | -1 to 1.01    | 4.50    | p < 0.001 |
+| Temperature in 2019    | 0.1572           | -0.0061             | 6e-04    | -1 to 1.01    | 6.64    | p < 0.001 |
 
 
