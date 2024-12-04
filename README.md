@@ -145,7 +145,7 @@ To examine the relationship between temperature, precipitation, and wildfire dis
 Regression analysis is a statistical method used to model and quantify the relationship between dependent and independent variables. In this study, the dependent variable represents wildfire disturbance metrics (e.g., area burned, fire severity, or frequency), while the independent variables are climate-related factors, including average temperature and total precipitation. The relationship between these variables can be expressed by a linear regression model show below.
 
 $$
-Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \epsilon
+Y = beta_0 + beta_1 X_1 + beta_2 X_2 + epsilon
 $$
 
 This method assumes that the relationships between variables are consistent across the study area. The statistical significance of the regression coefficients is assessed using hypothesis tests, and the model’s overall fit is evaluated using metrics such as the R^2   value, which indicates the proportion of variance in the dependent variable explained by the independent variables.
