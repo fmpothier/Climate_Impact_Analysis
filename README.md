@@ -181,7 +181,7 @@ Table 1: Nearest Neighbour Results for Study Area
 <b>Quadrat Analysis</b>
 
 Table 2: Quadrat Analysis Results for the Study Area
-<p align="center">
+
 | Variable           | **Number of Quadrats** | **Variance** | **Mean** | **VMR** | **Chi-square** | **p-value** |
 |---------------------------|------------------------|--------------|----------|---------|----------------|------------|
 | Precipitation in 2017      | 225                    | 6.39         | 1.66     | 3.84    | 860.49         | p < 0.001  |
@@ -190,7 +190,7 @@ Table 2: Quadrat Analysis Results for the Study Area
 | Temperature in 2018        | 225                    | 2.19         | 0.66     | 3.33    | 745.92         | p < 0.001  |
 | Precipitation in 2019      | 225                    | 2.46         | 0.66     | 3.88    | 868.71         | p < 0.001  |
 | Temperature in 2019        | 225                    | 1.94         | 0.64     | 3.05    | 683.05         | p < 0.001  |
-</p>
+
 
 <b>K-Function Analysis<b>
 
@@ -198,8 +198,9 @@ The graphs below show the results of the K-function analysis on weather stations
 
 <p align="center">
 <img src="images/K_function_precip_2017.jpeg" alt="K-function graph of weather stations measuring precipitation in BC in 2017" width="600" height="400" >
+<img src="images/K_function_temp_2017.jpeg" alt="K-function graph of weather stations measuring precipitation in BC in 2017" width="600" height="400" >
 </p>
 
-
+<i>Figure 1. The graph above illustrates the K-function analysis of the distribution of weather stations measuring total precipitation (top) and average temperature (bottom) in British Columbia (BC) in 2017. </i>
 
 
