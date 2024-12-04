@@ -1,0 +1,1 @@
+This folder has all the code in used to complete this analysis. It is important to note that ChatGPT was utilized in parts of the code development, in areas like finding the right library and function in R.
