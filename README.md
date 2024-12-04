@@ -215,5 +215,12 @@ The graphs below show the results of the K-function analysis on weather stations
   <img src="images/k-function_2019_Actual_temp.jpg" alt="K-function graph of weather stations measuring temp in BC in 2019" style="width: 45%;"/>
 </div>
 
-Figure 3.  The graphs show the K-function analysis of the distribution of weather stations in British Columbia (BC) in 2019. The left graph illustrates the distribution of stations measuring total precipitation, while the right graph illustrates the distribution of stations measuring average temperature.
+<i>Figure 3.  The graphs show the K-function analysis of the distribution of weather stations in British Columbia (BC) in 2019. The left graph illustrates the distribution of stations measuring total precipitation, while the right graph illustrates the distribution of stations measuring average temperature.</i>
+
+<b>4.2 Analyzing the Spatial Autocorrelation of Weather Stations
+
+Global Moran’s I
+
+Table 3:</b> Global Moran's I Results for Total Precipitation and Average Temperature in BC over the years 2017, 2018 and 2019. 
+
 
