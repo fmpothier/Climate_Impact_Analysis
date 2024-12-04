@@ -50,6 +50,38 @@ $$
 \bar{NND} = \frac{\sum \text{NND}}{n}
 $$
 
+The mean nearest neighbor random distribution is a theoretical value that represents a random distribution unique to the given study area study area (Clark & Evans, 1954). This value is then compared to the observed NND. If the observed NND is smaller than the random value, it suggests clustering of points. If the observed NND is larger than the random value, it suggests a dispersed distribution (3).
+
+$$
+\bar{\text{NND}_r} = \frac{1}{2\sqrt{\text{Density}}}
+$$
+
+To assess whether the observed distribution is significantly different from the theoretical random distribution, a z-score is calculated. The z-score tests if the observed pattern deviates significantly from a random distribution, indicating whether the spatial arrangement of points is clustered, random, or dispersed (4).
+
+$$
+Z_n = \frac{\bar{\text{NND}} - \bar{\text{NND}_r}}{\sigma(\bar{\text{NND}})}
+$$
+
+<b>Quadrat Analysis</b>
+
+Similar to the Nearest Neighbor Distance (NND) analysis, the Quadrat Analysis assesses the distribution of points across a given study area. It does this by overlaying a grid of equal-sized quadrats on the point data and calculating the number of points that fall within each quadrat (Thomas, 1977). This method helps determine if the spatial distribution of points is significantly different from a random spatial pattern.
+
+The variation (VAR) between the quadrats is then calculated, as shown in equation below. The VAR is used to indicate whether the points follow a clustered or dispersed distribution. A relatively high VAR suggests a clustered distribution, while a relatively low VAR indicates a dispersed distribution. However, the VAR alone cannot confirm if the distribution of points is significantly different from a theoretical random distribution for the given study area. To determine statistical significance, the VAR must be standardized, and a chi-square statistic must be computed.
+
+$$
+\text{VAR} = \frac{\sum f_i x_i^2 - \left( \frac{\left( \sum f_i x_i \right)^2}{m} \right)}{m - 1}
+$$
+
+To standardize the VAR for the study area, it is compared to the average number of points per quadrat. The mean is calculated by dividing the total number of points by the number of quadrats, as shown in Equation (8). The VAR is then divided by the mean to calculate the Variance-to-Mean Ratio (VMR) (9). If the distribution is perfectly random, the VAR and mean will be equal, resulting in a VMR of 1. For a clustered distribution, the VMR will be greater than 1, while for a dispersed distribution, the VMR will be less than 1.
+
+To test if the findings are significantly different from a random distribution, the chi-square statistic and corresponding p-value are computed.
+
+$$
+\text{MEAN} = \frac{n}{m}
+\text{VMR} = \frac{VAR}{MEAN}
+$$
+
+
 $$
 I = \frac{\sum_{i=1}^n\sum_{j=1}^nW_{i,j}(x_i - \bar{x})(x_j - \bar{x})}{(\sum_{i=1}^n\sum_{j=1}^nW_{i,j})\sum_{i=1}^n(x_i - \bar{x})^2}
 $$
