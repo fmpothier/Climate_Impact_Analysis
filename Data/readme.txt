@@ -1,0 +1,1 @@
+the data used in this analysis is all precented in this folder. The data was sourced from the BC data portal and Weather Station Data Portal links to these websites can be found in the reference section of the readme file one the main brench of this repository.
