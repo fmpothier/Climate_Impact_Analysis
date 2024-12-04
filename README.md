@@ -1,4 +1,9 @@
-# Climate_Impact_Analysis
+
+# Climate_Impact_Analysis 1
+## test sizes 2
+### size 3
+#### size 4
+##### size 5
 <b>1.0 Introduction</b>
 
 Over the past few decades, wildfires have burned millions of hectares of forest across British Columbia (BC), devastating the landscape. Notably, the four most severe wildfire seasons occurred in 2017, 2018, 2021, and 2023 (Parisien et al., 2023). Wildfires significantly impact ecosystems, including biodiversity, habitats, water systems, and human settlements (Haider et al., 2019). Additionally, the smoke from these fires severely affects air quality over vast distances (Douglas-Vail et al., 2023).
@@ -232,4 +237,20 @@ Table 3:</b> Global Moran's I Results for Total Precipitation and Average Temper
 | Precipitation in 2019  | 0.1033           | -0.0060             | 6e-04    | -1 to 1.01    | 4.50    | p < 0.001 |
 | Temperature in 2019    | 0.1572           | -0.0061             | 6e-04    | -1 to 1.01    | 6.64    | p < 0.001 |
 
+<b>4.3 Interpolating Temperature and Precipitation
+
+Inverse Distance Weighting (IDW)</b>
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="images/Clipped_IDW_Interpolation_2017_rain_Map.png" alt="IDW graph of weather stations measuring precipitation in BC in 2017" style="width: 45%;"/>
+  <img src="images/Clipped_IDW_Interpolation_2017_temp_Map.png" alt="IWD graph of weather stations measuring temp in BC in 2017" style="width: 45%;"/>
+</div>
+<i>Figure 4. The above graphs show the IDW interpolation surface for average temperature (right) and total precipitation (left) in BC in 2017.</i>
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="images/Clipped_IDW_Interpolation_2018_rain_Map.png" alt="IDW graph of precipitation in BC in 2018" style="width: 45%;"/>
+  <img src="images/Clipped_IDW_Interpolation_2018_temp_Map.png" alt="IWD graph of temp in BC in 2018" style="width: 45%;"/>
+</div>
+
+<i>Figure 5. The graphs above depict the IDW interpolation surfaces for average temperature (right) and total precipitation (left) across British Columbia in 2018. </i>
 
