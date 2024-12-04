@@ -200,6 +200,10 @@ The graphs below show the results of the K-function analysis on weather stations
 <img src="images/K_function_precip_2017.jpeg" alt="K-function graph of weather stations measuring precipitation in BC in 2017" width="600" height="400" >
 <img src="images/K_function_temp_2017.jpeg" alt="K-function graph of weather stations measuring precipitation in BC in 2017" width="600" height="400" >
 </p>
+<div style="display: flex; justify-content: space-around;">
+  <img src="images/K_function_precip_2017.jpeg" alt="K-function graph of weather stations measuring precipitation in BC in 2017" style="width: 45%;"/>
+  <img src="images/K_function_temp_2017.jpeg" alt="K-function graph of weather stations measuring temp in BC in 2017" style="width: 45%;"/>
+</div>
 
 <i>Figure 1. The graph above illustrates the K-function analysis of the distribution of weather stations measuring total precipitation (top) and average temperature (bottom) in British Columbia (BC) in 2017. </i>
 
