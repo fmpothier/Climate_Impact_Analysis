@@ -158,7 +158,7 @@ While traditional regression assumes a global relationship across the entire stu
 
 In GWR, a spatial kernel function assigns weights to observations based on their distance from the location being analyzed, with closer points receiving higher weights. This allows for the detection of local variations in the relationship between climate variables and wildfire disturbances, providing a nuanced understanding of how these factors interact spatially.
 
-The output of GWR includes maps of regression coefficients and R^2   values, illustrating how the strength and nature of these relationships change across the study area. By comparing the results of global regression and GWR, this study assesses not only the overall influence of climate variables on wildfire disturbances but also identifies areas where these relationships are particularly strong or weak.
+The output of GWR includes maps of regression coefficients and $$ R^2 $$ values, illustrating how the strength and nature of these relationships change across the study area. By comparing the results of global regression and GWR, this study assesses not only the overall influence of climate variables on wildfire disturbances but also identifies areas where these relationships are particularly strong or weak.
 By combining both global and geographical regression methods, the analysis offers comprehensive insights into the climate-wildfire relationship in British Columbia, highlighting both overarching trends and localized patterns.
 
 <b>4.0 Results</b>
