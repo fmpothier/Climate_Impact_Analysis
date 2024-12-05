@@ -1,9 +1,8 @@
 
-# Climate_Impact_Analysis 1
-## test sizes 2
-### size 3
-#### size 4
-##### size 5
+# Analyzing The Climate Impact on Wildfires in British Columbia from 2017 - 2019
+### Frankie Pothier (V00991730)
+### 4/12/2024
+
 
 ### 1.0 Introduction
 
@@ -366,7 +365,7 @@ In terms of temperature, the difference in land burned between 2017 and 2018 was
 
 Root Mean Square Error (RMSE) and $$R^2$$ metrics were used to assess the accuracy of the Kriging interpolation surfaces. On average, the Kriging interpolation performed better at predicting precipitation compared to temperature across British Columbia (BC). The results indicated that the Kriging model performed moderately well. The RMSE for predicted precipitation in BC ranged from 129.68 mm to 164.14 mm, depending on the year analyzed (Table 4). This suggests that, for a dataset with total precipitation ranging from 0 to 2000 mm, the predicted values in the Kriging surface were off by approximately 6.5% to 8.2%. In contrast, the RMSE for temperature predictions in BC ranged from 2.45°C to 3.65°C. For temperature data ranging from 0°C to 27°C, this indicates that the average predicted value was off by approximately 9.07% to 13.5% (Table 4).
 
-The R^2 values for the Kriging surfaces also demonstrated better performance for precipitation predictions than for temperature. The $$R^2$$ values for surfaces predicting precipitation in BC ranged from 0.50 to 0.63, indicating that the Kriging surface accounted for 50% to 63% of the variation in precipitation (Table 4). In comparison, the R^2 values for the Kriging surfaces predicting temperature ranged from 0.29 to 0.42, suggesting that the model accounted for 29% to 42% of the variation in temperature across BC (Table 4).
+The $$R^2$$ values for the Kriging surfaces also demonstrated better performance for precipitation predictions than for temperature. The $$R^2$$ values for surfaces predicting precipitation in BC ranged from 0.50 to 0.63, indicating that the Kriging surface accounted for 50% to 63% of the variation in precipitation (Table 4). In comparison, the $$R^2$$ values for the Kriging surfaces predicting temperature ranged from 0.29 to 0.42, suggesting that the model accounted for 29% to 42% of the variation in temperature across BC (Table 4).
 The Geographically Weighted Regression (GWR) model was applied to further investigate the relationship between key climate variables—precipitation and temperature—and wildfire activity in British Columbia (BC). Local $$R^2$$ values were calculated and mapped to visualize the spatial variation in these relationships. The results indicated a low to moderate relationship between total precipitation and wildfires in BC, while the relationship between average temperature and wildfires was consistently weaker.
 
 In 2019, the majority of local $$R^2$$ values for the relationship between precipitation and wildfires fell between 0.1 and 0.35. In contrast, local $$R^2$$ values for the relationship between temperature and wildfires were predominantly below 0.15 (figure 12). This suggests that, although the relationship between precipitation and wildfires is not strong, it is a more significant predictor of wildfire activity in BC compared to temperature (Figures 14 and 15).
