@@ -230,7 +230,7 @@ The graphs below show the results of the K-function analysis on weather stations
 
 <b>4.2 Analyzing the Spatial Autocorrelation of Weather Stations
 
-<b>Global Moran’s I</b>
+Global Moran’s I</b>
 
 Moran’s I was used to measure the spatial autocorrelation of weather stations in BC, and the results can be found in Table 3. This metric indicates whether the weather stations measuring temperature and precipitation exhibited spatial autocorrelation. Global Moran’s I is the observed value, with positive values suggesting clustering and negative values indicating dispersion. The global Moran’s I was then compared to the expected Moran’s I, and a z-score and p-value were calculated to test for statistically significant spatial autocorrelation. A significance level of 95% was used during this analysis.
 
