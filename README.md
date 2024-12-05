@@ -212,21 +212,21 @@ The graphs below show the results of the K-function analysis on weather stations
   <img src="images/K_function_temp_2017.jpeg" alt="K-function graph of weather stations measuring temp in BC in 2017" style="width: 45%;"/>
 </div>
 
-<i>Figure 1. The graph above illustrates the K-function analysis of the distribution of weather stations measuring total precipitation (left) and average temperature (right) in British Columbia (BC) in 2017. </i>
+<i><b>Figure 1.</b> The graph above illustrates the K-function analysis of the distribution of weather stations measuring total precipitation (left) and average temperature (right) in British Columbia (BC) in 2017. </i>
 
 <div style="display: flex; justify-content: space-around;">
   <img src="images/K_function_precip_2018.jpeg" alt="K-function graph of weather stations measuring precipitation in BC in 2018" style="width: 45%;"/>
   <img src="images/K_function_temp_2018.jpeg" alt="K-function graph of weather stations measuring temp in BC in 2018" style="width: 45%;"/>
 </div>
 
-<i>Figure 2.  The graphs show the K-function analysis of the distribution of weather stations in British Columbia (BC) in 2018. The left graph represents stations measuring total precipitation, while the right graph represents stations measuring average temperature.</i>
+<i><b>Figure 2.</b>  The graphs show the K-function analysis of the distribution of weather stations in British Columbia (BC) in 2018. The left graph represents stations measuring total precipitation, while the right graph represents stations measuring average temperature.</i>
 
 <div style="display: flex; justify-content: space-around;">
   <img src="images/K-functon_2019_temp_graph.jpeg" alt="K-function graph of weather stations measuring precipitation in BC in 2019" style="width: 46%;"/>
   <img src="images/k-function_2019_Actual_temp.jpg" alt="K-function graph of weather stations measuring temp in BC in 2019" style="width: 45%;"/>
 </div>
 
-<i>Figure 3.  The graphs depict the K-function analysis of weather station distributions in British Columbia (BC) for 2019. The left graph represents the distribution of stations measuring total precipitation, while the right graph represents the distribution of stations measuring average temperature..</i>
+<i><b>Figure 3.</b>  The graphs depict the K-function analysis of weather station distributions in British Columbia (BC) for 2019. The left graph represents the distribution of stations measuring total precipitation, while the right graph represents the distribution of stations measuring average temperature..</i>
 
 <b>4.2 Analyzing the Spatial Autocorrelation of Weather Stations
 
@@ -254,21 +254,21 @@ Inverse Distance Weighting (IDW)</b>
   <img src="images/Clipped_IDW_Interpolation_2017_temp_Map.png" alt="IWD graph of weather stations measuring temp in BC in 2017" style="width: 45%;"/>
 </div>
 
-<i>Figure 4. The above graphs show the IDW interpolation surface for average temperature (right) and total precipitation (left) in BC in 2017.</i>
+<i><b>Figure 4.</b> The above graphs show the IDW interpolation surface for average temperature (right) and total precipitation (left) in BC in 2017.</i>
 
 <div style="display: flex; justify-content: space-around;">
   <img src="images/Clipped_IDW_Interpolation_2018_rain_Map.png" alt="IDW graph of precipitation in BC in 2018" style="width: 45%;"/>
   <img src="images/Clipped_IDW_Interpolation_2018_temp_Map.png" alt="IWD graph of temp in BC in 2018" style="width: 45%;"/>
 </div>
 
-<i>Figure 5. The graphs above depict the IDW interpolation surfaces for average temperature (right) and total precipitation (left) across British Columbia in 2018. </i>
+<i><b>Figure 5.</b> The graphs above depict the IDW interpolation surfaces for average temperature (right) and total precipitation (left) across British Columbia in 2018. </i>
 
 <div style="display: flex; justify-content: space-around;">
   <img src="images/Clipped_IDW_Interpolation_2019_rain_Map.png" alt="IDW graph of precipitation in BC in 2019" style="width: 45%;"/>
   <img src="images/Clipped_IDW_Interpolation_2019_temp_Map.png" alt="IWD graph of temp in BC in 2019" style="width: 45%;"/>
 </div>
 
-<i>Figure 6. The above graphs show the IDW interpolation surface for average temperature (bottom) and total precipitation (top) in BC in 2019. </i>
+<i><b>Figure 6.</b> The above graphs show the IDW interpolation surface for average temperature (bottom) and total precipitation (top) in BC in 2019. </i>
 
 <b>Kriging</b>
 
@@ -277,21 +277,21 @@ Inverse Distance Weighting (IDW)</b>
   <img src="images/Kriging_interploation_2017temp.jpeg" alt="IWD graph of temp in BC in 2017" style="width: 45%;"/>
 </div>
 
-<i>Figure 7. the above maps show a kriging interpolation surface of average temperature (bottom) and total precipitation (top) in BC in 2017.</i>
+<i><b>Figure 7.</b> the above maps show a kriging interpolation surface of average temperature (bottom) and total precipitation (top) in BC in 2017.</i>
 
 <div style="display: flex; justify-content: space-around;">
   <img src="images/Kriging_interpolation_2018rn.jpeg" alt="kriging graph of precipitation in BC in 2018" style="width: 45%;"/>
   <img src="images/Kriging_interpolation_2018temp.jpeg" alt="IWD graph of temp in BC in 2018" style="width: 45%;"/>
 </div>
 
-<i> Figure 8. the above maps show a kriging interpolation surface of average temperature (bottom) and total precipitation (top) in BC in 2018. </i>
+<i> <b>Figure 8.</b> the above maps show a kriging interpolation surface of average temperature (bottom) and total precipitation (top) in BC in 2018. </i>
 
 <div style="display: flex; justify-content: space-around;">
   <img src="images/Kriging_inter_precip_2019_2.jpeg" alt="kriging graph of precipitation in BC in 2019" style="width: 45%;"/>
   <img src="images/Kriging_interpolation_2019temp.jpeg" alt="IWD graph of temp in BC in 2019" style="width: 45%;"/>
 </div>
 
-<i>Figure 9. The above maps show a kriging interpolation surface of average temperature (bottom) and total precipitation (top) in BC in 2019.</i>
+<i><b>Figure 9.</b> The above maps show a kriging interpolation surface of average temperature (bottom) and total precipitation (top) in BC in 2019.</i>
 
 <b>Table 4:</b> The table below shows the RMSE and $$R^2$$ for each kriging interpolation surfaces in figures 7, 8, and 9.
 
