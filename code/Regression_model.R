@@ -264,27 +264,6 @@ if (!is.numeric(indep_var_t19)) {
   }
 }
 
-# Box-Cox transformation
-boxcox_result <- boxcox(dependent_var18 ~ indep_var_t18, data = fire_t_18_sp)
-lambda <- boxcox_result$x[which.max(boxcox_result$y)]
-
-# Box-Cox transformation
-boxcox_result <- boxcox(dependent_var18 ~ indep_var_t18, data = fire_t_18_sp@data)
-
-# Find the optimal lambda
-lambda <- boxcox_result$x[which.max(boxcox_result$y)]
-
-# Apply the transformation to the dependent variable
-transformed <- if (lambda != 0) {
-  (dependent_var17^lambda - 1) / lambda
-} else {
-  log(dependent_var17)
-}
-
-# Add the transformed variable back to the fire_t_17_sp@data slot
-fire_t_18_sp@data$transformed <- transformed
-
-
 gwr_model_opt_t17 <- run_gwr_model(sqrt(dependent_var17), indep_var_t17, fire_t_17_sp)
 gwr_model_opt_t18 <- run_gwr_model(log(dependent_var18), indep_var_t18, fire_t_18_sp)
 gwr_model_opt_t19 <- run_gwr_model(log(dependent_var19), indep_var_t19, fire_t_19_sp)
