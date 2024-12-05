@@ -303,6 +303,18 @@ The RMSE (Root Mean Square Error) provides a measure of the accuracy of the krig
 
 Regression Analysis</b>
 
+To evaluate the four key assumptions of linear regression models, a series of diagnostic tests were conducted, including the rainbow test, Breusch-Pagan test, Shapiro-Wilk normality test, and Durbin-Watson test. Prior to these tests, log and square root transformations were applied to the dependent variable. The transformation method was chosen based on an examination of the residuals to identify the approach that best aligned with the model’s requirements.
+
+The rainbow test was employed to determine whether the relationship between the dependent and independent variables was linear. The test confirmed a linear relationship between total precipitation and wildfires in 2017, as well as between average temperature and wildfires in the same year. However, the models for 2018 and 2019 did not demonstrate linearity, thereby violating this core assumption of the linear regression model.
+
+The Breusch-Pagan test was used to assess homoscedasticity in the models. Results showed no evidence of heteroscedasticity in the models analyzing the relationships between total precipitation and wildfires, as well as between average temperature and wildfires in BC for 2017. However, heteroscedasticity was evident in the models for 2018 and 2019, breaking this fundamental assumption of linear regression.
+
+The Shapiro-Wilk normality test was conducted to examine the distribution of residuals in each model. This analysis revealed that none of the models adhered to a normal distribution, thereby violating another key assumption of linear regression. Consequently, the results from these models may not accurately capture the true relationships between climate variables and wildfires in BC during the period 2017–2019.
+
+The Durbin-Watson test was performed to detect spatial autocorrelation within the models. No spatial autocorrelation was identified in the 2017 models for climate variables (analyzed separately), which upheld this assumption of linear regression. However, significant spatial autocorrelation was found in the 2018 and 2019 models, violating another critical assumption.
+
+Given that at least one of the four main assumptions of linear regression was violated in these analyses, the results may be unreliable and cannot be confidently interpreted. To overcome the limitations of linear regression, a Weighted Geographical Regression model was utilized to examine the relationships between climate variables and wildfires in BC for the years 2017–2019.
+
 <b>Geographical Regression Analysis</b>
 
 <div style="display: flex; justify-content: space-around;">
