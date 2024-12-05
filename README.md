@@ -165,15 +165,18 @@ While traditional regression assumes a global relationship across the entire stu
 In GWR, a spatial kernel function assigns weights to observations based on their distance from the location being analyzed, with closer points receiving higher weights. This allows for the detection of local variations in the relationship between climate variables and wildfire disturbances, providing a nuanced understanding of how these factors interact spatially.
 
 The output of GWR includes maps of regression coefficients and $$R^2$$ values, illustrating how the strength and nature of these relationships change across the study area. By comparing the results of global regression and GWR, this study assesses not only the overall influence of climate variables on wildfire disturbances but also identifies areas where these relationships are particularly strong or weak.
+
 By combining both global and geographical regression methods, the analysis offers comprehensive insights into the climate-wildfire relationship in British Columbia, highlighting both overarching trends and localized patterns.
 
 ### 4.0 Results
 
 <b>4.1 Evaluating the Spatial Distribution of Weather Stations 
 
-Nearest Neighbour Distance
+Nearest Neighbour Distance</b>
 
-Table 1:</b> Nearest Neighbour Results for Study Area
+A nearest neighbor distance (NND) analysis was conducted to evaluate the spatial distribution of weather stations across the study area. The results of this analysis are presented in Table 1. The random NND provides a general understanding of whether the weather stations are clustered or dispersed. While comparing the observed NND to the random NND offers insight into the distribution pattern, it does not establish whether the observed distribution significantly deviates from the theoretical random distribution within the study area. To determine statistical significance, the z-score and p-value are used. These metrics evaluate whether the distribution of weather stations across British Columbia during the study period is significantly different from the theoretical random distribution. A significant level of 95% was utilized during this analysis, corresponding to a p-value threshold of below 0.05. 
+
+<b>Table 1:</b> Nearest Neighbour Results for Study Area
 
 | Variable                     | Random Mean NND  | Dispersed Mean NND  | Observed Mean NND  | Z-score | Ratio | p-value |
 |:-----------------------------:|:--------------:|:-----------------:|:----------------:|:-------:|:-----:|:------------:|
@@ -184,9 +187,11 @@ Table 1:</b> Nearest Neighbour Results for Study Area
 | Precipitation in 2019         | 40644.25       | 87346.93          | 28984.09         | -6.56   | 0.71  | p < 0.001|
 | Temperature in 2019           | 40644.25       | 87346.93          | 29305.54         | -6.38   | 0.72  | p < 0.001|
 
-<b>Quadrat Analysis
+<b>Quadrat Analysis</b>
 
-Table 2:</b> Quadrat Analysis Results for the Study Area
+The distribution of weather stations in the study area was assessed using quadrat analysis, with the results presented in Table 2. Due to the sparseness of data across the study area, a smaller number of quadrats (225) were used. The variance-to-mean ratio (VMR) was applied to determine whether the distribution pattern of weather stations followed a random, dispersed, or clustered distribution. The chi-square statistic was used to test if the observed pattern significantly deviated from randomness, while the p-value assessed the likelihood that the observed distribution occurred by chance. A 95% significance level was used for this analysis, meaning results with a p-value less than 0.05 were considered statistically significant.
+
+<b>Table 2:</b> Quadrat Analysis Results for the Study Area
 
 | Variable           | **Number of Quadrats** | **Variance** | **Mean** | **VMR** | **Chi-square** | **p-value** |
 |:-------------------------:|:----------------------:|:-------------:|:--------:|:-------:|:--------------:|:-----------:|
@@ -221,13 +226,15 @@ The graphs below show the results of the K-function analysis on weather stations
   <img src="images/k-function_2019_Actual_temp.jpg" alt="K-function graph of weather stations measuring temp in BC in 2019" style="width: 45%;"/>
 </div>
 
-<i>Figure 3.  The graphs show the K-function analysis of the distribution of weather stations in British Columbia (BC) in 2019. The left graph illustrates the distribution of stations measuring total precipitation, while the right graph illustrates the distribution of stations measuring average temperature.</i>
+<i>Figure 3.  The graphs depict the K-function analysis of weather station distributions in British Columbia (BC) for 2019. The left graph represents the distribution of stations measuring total precipitation, while the right graph represents the distribution of stations measuring average temperature..</i>
 
 <b>4.2 Analyzing the Spatial Autocorrelation of Weather Stations
 
-Global Moran’s I
+<b>Global Moran’s I</b>
 
-Table 3:</b> Global Moran's I Results for Total Precipitation and Average Temperature in BC over the years 2017, 2018 and 2019. 
+Moran’s I was used to measure the spatial autocorrelation of weather stations in BC, and the results can be found in Table 3. This metric indicates whether the weather stations measuring temperature and precipitation exhibited spatial autocorrelation. Global Moran’s I is the observed value, with positive values suggesting clustering and negative values indicating dispersion. The global Moran’s I was then compared to the expected Moran’s I, and a z-score and p-value were calculated to test for statistically significant spatial autocorrelation. A significance level of 95% was used during this analysis.
+
+<b>Table 3:</b> Global Moran's I Results for Total Precipitation and Average Temperature in BC over the years 2017, 2018 and 2019. 
 
 | Year/Variable          | Global Moran’s I | Expected Moran’s I | Variance | Range         | z-score | p-value   |
 |:----------------------:|:---------------:|:-------------------:|:---------:|:-------------:|--------:|:---------:|
