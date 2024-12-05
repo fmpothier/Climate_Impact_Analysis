@@ -254,21 +254,21 @@ Inverse Distance Weighting (IDW)</b>
   <img src="images/Clipped_IDW_Interpolation_2017_temp_Map.png" alt="IWD graph of weather stations measuring temp in BC in 2017" style="width: 45%;"/>
 </div>
 
-<i><b>Figure 4.</b> The above graphs show the IDW interpolation surface for average temperature (right) and total precipitation (left) in BC in 2017.</i>
+<i><b>Figure 4.</b> The graphs above display the IDW interpolation surfaces for average temperature (righ) and total precipitation (left) in BC for 2017. The IDW interpolation for average temperature shows that northern areas are colder, while southern areas of BC are warmer. The IDW for total precipitation indicates that heavier rainfall is concentrated along the coast of BC. These findings align with the typical climate patterns in BC.</i>
 
 <div style="display: flex; justify-content: space-around;">
   <img src="images/Clipped_IDW_Interpolation_2018_rain_Map.png" alt="IDW graph of precipitation in BC in 2018" style="width: 45%;"/>
   <img src="images/Clipped_IDW_Interpolation_2018_temp_Map.png" alt="IWD graph of temp in BC in 2018" style="width: 45%;"/>
 </div>
 
-<i><b>Figure 5.</b> The graphs above depict the IDW interpolation surfaces for average temperature (right) and total precipitation (left) across British Columbia in 2018. </i>
+<i><b>Figure 5.</b> The graphs above show the IDW interpolation surfaces for average temperature (bottom) and total precipitation (top) in BC for 2018. The IDW for average temperature indicates that BC was generally warmer in 2018 than in 2017, with the northern part experiencing a temperature increase. The IDW for total precipitation shows a similar pattern to 2017, with the majority of precipitation occurring along the coast. </i>
 
 <div style="display: flex; justify-content: space-around;">
   <img src="images/Clipped_IDW_Interpolation_2019_rain_Map.png" alt="IDW graph of precipitation in BC in 2019" style="width: 45%;"/>
   <img src="images/Clipped_IDW_Interpolation_2019_temp_Map.png" alt="IWD graph of temp in BC in 2019" style="width: 45%;"/>
 </div>
 
-<i><b>Figure 6.</b> The above graphs show the IDW interpolation surface for average temperature (bottom) and total precipitation (top) in BC in 2019. </i>
+<i><b>Figure 6.</b> The above graphs show the IDW interpolation surfaces for average temperature (bottom) and total precipitation (top) in BC for 2019. The IDW surface for average temperature in 2019 follows a similar pattern to 2018, with temperatures warmer than in 2017. However, the IDW for total precipitation in 2019 shows more precipitation in the interior of BC compared to the previous two years. </i>
 
 <b>Kriging</b>
 
